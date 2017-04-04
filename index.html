@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LyphNet</title>
+    <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    <p>
+        <text class="label">Load CSV file:</text>
+        <input type="file" id="inputFile" accept=".csv"/>
+        <button id="loadFile" class="myButton">
+            <img src="icons/import.png" class="myIcon">Load</img>
+        </button>
+    </p>
+
+    <p>
+        <text class="label">Save REST API calls:</text>
+        <input type="text" id="outputFile" placeholder="genRestAPI" style="width: 175px;"/>.json </text>
+        <button type="submit" id="saveFile" class="myButton">
+            <img src="icons/export.png" class="myIcon">Save</img>
+            <span class="glyphicon glyphicon-refresh"></span>
+        </button>
+    </p>
+
+    <h4>Input file content</h4>
+    <table id="inputFileContent"></table>
+
+    <h4>Output file content</h4>
+    <div id="outputFileContent"></div>
+
+    <script src="bundle.js"></script>
+
+</body>
+</html>

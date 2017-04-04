@@ -1,0 +1,11 @@
+.myButton{
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.myIcon{
+    width:16px;
+    height:16px;
+    vertical-align: middle;
+}
