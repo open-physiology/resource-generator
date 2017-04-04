@@ -32,7 +32,7 @@ $( "#saveFile" ).click(function() {
 });
 
 function showInTable(lines){
-    //$("#inputFileContent tr").remove();
+    $("#inputFileContent tr").remove();
     console.log(lines);
     for (var i = 0; i < lines.length; i++){
         var row = $("<tr />");
