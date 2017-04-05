@@ -11,10 +11,14 @@ $('#loadFile').click(function () {
         var fr = new FileReader();
         fr.readAsText(file);
         fr.onload = function () {
+        	console.log('file content:', fr.result);
             parse(fr.result , {comment: '#'}, function (err, output) {
-                // TODO: handle errors
-                showInTable(output);
-                generateResources(output);
+                if (err) {
+	                console.error(err);
+                } else {
+	                showInTable(output);
+	                // generateResources(output);
+                }
             });
         };
     } else {
@@ -32,6 +36,7 @@ $('#saveFile').click(function () {
 function showInTable(lines){
     $('#inputFileContent').find('tr').remove();
     console.log(lines);
+    lines.len
     for (var i = 0; i < lines.length; i++){
         var row = $('<tr />');
         for (var j = 0; j < lines[i].length; j++){
