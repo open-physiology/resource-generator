@@ -1,6 +1,7 @@
 var parse = require('csv-parse');
 var $     = require('jquery');
 
+//first comment
 /* Load CSV file content and parse it */
 $('#loadFile').click(function () {
     var inputFile = $('#inputFile')[0];
@@ -43,7 +44,7 @@ function showInTable(lines){
 }
 
 /* Convert data to open physiology resources */
-function generateResources(input){
+function generateResources(/*input*/){
     //console.log("Processing data ", input);
     $('#outputFileContent').text("Your generated REST API calls go here!");
 }
