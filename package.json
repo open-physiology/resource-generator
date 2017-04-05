@@ -13,7 +13,7 @@
   "dependencies": {
     "csv-parse": "^1.2.0",
     "jquery": "^3.2.1",
-    "open-physiology-model": "https://github.com/mhelvens/open-physiology-model.git#command-pattern"
+    "open-physiology-model": "https://github.com/open-physiology/open-physiology-model.git#command-pattern"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.0.1",

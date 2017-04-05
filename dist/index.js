@@ -16993,9 +16993,9 @@ $('#saveFile').click(function () {
 function showInTable(lines){
     $('#inputFileContent').find('tr').remove();
     console.log(lines);
-    lines.len
     for (var i = 0; i < lines.length; i++){
-        var row = $('<tr />');
+        var row = $('<tr></tr>');
+        console.log('row = ', row);
         for (var j = 0; j < lines[i].length; j++){
             var col = $('<td>' + lines[i][j] + '</td>');
             row.append(col);

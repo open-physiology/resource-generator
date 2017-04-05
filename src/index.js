@@ -1,5 +1,5 @@
-var parse = require('csv-parse');
-var $     = require('jquery');
+var parse = require('csv-parse'); // DOCS: http://csv.adaltas.com/parse/
+var $     = require('jquery');    // DOCS: https://api.jquery.com/
 
 //first comment
 /* Load CSV file content and parse it */
@@ -36,9 +36,8 @@ $('#saveFile').click(function () {
 function showInTable(lines){
     $('#inputFileContent').find('tr').remove();
     console.log(lines);
-    lines.len
     for (var i = 0; i < lines.length; i++){
-        var row = $('<tr />');
+        var row = $('<tr></tr>');
         for (var j = 0; j < lines[i].length; j++){
             var col = $('<td>' + lines[i][j] + '</td>');
             row.append(col);
